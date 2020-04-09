@@ -30,6 +30,21 @@ module.exports = function(app) {
       });
   });
 
+  // Route is to grab information from the survey form and put it on the db
+  //
+  // app.post("/api/posts", function(req, res) {
+  //   console.log(req.body);
+  //   db.Post.create({
+  //     title: req.body.title,
+  //     body: req.body.body,
+  //     category: req.body.category
+  //   })
+  //     .then(function(dbPost) {
+  //       res.json(dbPost);
+  //     });
+  // });
+
+
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();

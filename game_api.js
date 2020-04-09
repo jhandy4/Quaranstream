@@ -17,7 +17,7 @@ function getPopularGames(genreId) {
 
   axios({
     url: "https://api-v3.igdb.com/games",
-    method: "POST",
+    method: "POST", //should be GET Method
     headers: {
       Accept: "application/json",
       "user-key": process.env.gameApiKey
